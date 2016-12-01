@@ -109,12 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14D539101C51157700FF0DD5 /* Build configuration list for PBXNativeTarget "SyncAppNetDemo" */;
 			buildPhases = (
-				8EF0FC17224C5B8689AE373A /* 📦 Check Pods Manifest.lock */,
+				8EF0FC17224C5B8689AE373A /* [CP] Check Pods Manifest.lock */,
 				14D538FF1C51157700FF0DD5 /* Sources */,
 				14D539001C51157700FF0DD5 /* Frameworks */,
 				14D539011C51157700FF0DD5 /* Resources */,
-				6DC52C5D818222E3C60701F0 /* 📦 Embed Pods Frameworks */,
-				65124BC992014626F628CC63 /* 📦 Copy Pods Resources */,
+				6DC52C5D818222E3C60701F0 /* [CP] Embed Pods Frameworks */,
+				65124BC992014626F628CC63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,14 +172,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		65124BC992014626F628CC63 /* 📦 Copy Pods Resources */ = {
+		65124BC992014626F628CC63 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,14 +187,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SyncAppNetDemo/Pods-SyncAppNetDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6DC52C5D818222E3C60701F0 /* 📦 Embed Pods Frameworks */ = {
+		6DC52C5D818222E3C60701F0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,14 +202,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SyncAppNetDemo/Pods-SyncAppNetDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8EF0FC17224C5B8689AE373A /* 📦 Check Pods Manifest.lock */ = {
+		8EF0FC17224C5B8689AE373A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SyncAppNetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SyncAppNetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SyncAppNetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SyncAppNetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
