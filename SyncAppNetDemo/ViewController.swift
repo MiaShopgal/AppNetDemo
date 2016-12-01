@@ -32,7 +32,7 @@ class ViewController: UITableViewController {
 
     func fetchNewData() {
         // Use the `networking.fetchLocalItems` method to try Sync's change notifications
-        self.networking.fetchItems { _ in
+        self.networking.fetchLocalItems { _ in
             self.fetchCurrentObjects()
             self.refreshControl?.endRefreshing()
         }
@@ -60,4 +60,16 @@ extension ViewController {
 
         return cell!
     }
+
+    override func tableView ( tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath ) {
+
+        print("selecting \(indexPath.row)")
+
+        let request = NSFetchRequest(entityName: "Data")
+        let data = ( try! DATAStack ( modelName: "AppNet" ).mainContext.executeFetchRequest( request)) as! [Data]
+
+        print("data \(data)")
+
+    }
+
 }
